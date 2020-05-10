@@ -1,8 +1,4 @@
 
-
-
-
-
 n=int(input('Hany kör legyen?'))
 
 
@@ -17,11 +13,11 @@ def fordulok(a,b):
         max=a
         kul=a-b
 
-        return ('Az első játékos vezet ennyivel:{}'.format (kul))
+        return ('P1 {} '.format (kul))
     elif b>a:
         max=b
         kul=b-a
-        return('A második játékos vezet ennyivel:{}'.format(kul))
+        return('P2 {} '.format(kul))
     elif a==b:
         return('Döntetlen')
 
@@ -49,8 +45,10 @@ def vegso(s,s2):
 
 
     if s>s2:
-        return 'Az elso nyert'
+        return 'P1 nyert'
     elif s2>s:
-        return 'A második nyert'
 
+        return 'P2 nyert'
+    else:
+        return 'Döntetlen lett a vegeredmeny'
 print(vegso(s,s2))
