@@ -1,0 +1,36 @@
+
+import string
+
+abc=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+with open('input.txt','r')as f_i:
+    for line in f_i:
+
+        new_str=''
+        for word in line:
+
+            if word.isupper():
+                new_str+=word.lower()
+            elif word==' ':
+                new_str+='*'
+            else:
+                new_str+=word
+
+
+def szam(stri):
+    uj_str =''
+    for i in range(len(stri)):
+
+        for j in range(len(abc)):
+            if stri[i]==abc[j]:
+
+                uj_str+=str(j+1)+' '
+
+        if stri[i] in string.punctuation:
+                uj_str+=stri[i]+' '
+        with open('output.txt','w') as f_o:
+            f_o.write(uj_str)
+
+
+    return "Az outputba iras sikeres volt!"
+print(szam(new_str))
