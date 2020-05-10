@@ -1,4 +1,5 @@
+n=int(input('n:'))
 def lepcso(n,string):
     for i in range(0,n):
         print(' '*(n-i)+'_'+string*i)
-lepcso(4,'#')
+lepcso(n,'#')
