@@ -32,5 +32,5 @@ def szam(stri):
             f_o.write(uj_str)
 
 
-    return "Az outputba iras sikeres volt!"
-print(szam(new_str))
+    
+szam(new_str)
