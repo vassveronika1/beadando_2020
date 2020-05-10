@@ -1,5 +1,5 @@
 
-n=int(input('Hany kör legyen?'))
+n=int(input('Hany kör legyen?( 10000ig lehet beirni)'))
 
 
 
@@ -28,7 +28,7 @@ def fordulok(a,b):
 l=[]
 l2=[]
 for i in range(1,n+1):
-    pontok=input('Adja meg a játékosok pontszámait vesszővel elválasztva!')
+    pontok=input('Adja meg a játékosok pontszámait vesszővel elválasztva 1 es 1000 kozott!')
 
     a,b=pontok.split(',')
     l.append(int(a))
